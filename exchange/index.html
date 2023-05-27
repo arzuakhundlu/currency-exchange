@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+
+   <section>
+        <div class="container">
+             <div class="convertor_cart">
+                    <div class="title">
+                        <h2>Valyuta konvertor</h2>
+                        <div class="valyuta_list_container">
+                            <div class="valyuta_list">
+                                <div class="valyuta_axtar">
+                                    <div class="search_valyuta">
+                                        <i class="fa-solid fa-magnifying-glass"></i><input type="text">
+                                        <i class="fa-solid fa-arrow-down-short-wide sort"></i>
+                                    </div>
+                                    <button class="selectBtn"><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                                <div class="overfloww">
+                                    <div class="valyuta_select_list">
+                                        <ul >
+                                            <li onclick="addBtn1('try')">
+                                                <div class="flag_val">
+                                                    <div class="flag">
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/800px-Flag_of_Turkey.svg.png?20210808085121" alt="">
+                                                    </div>
+                                                    <span class="listText">TRY</span> 
+                                                </div>
+                                                <button class="addBtn" > + </button></li>
+                                            <li  onclick="addBtn1('azn')">
+                                                <div class="flag_val">
+                                                    <div class="flag">
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Azerbaijan_Democtratic_Republic.PNG/800px-Flag_of_Azerbaijan_Democtratic_Republic.PNG" alt="">
+                                                    </div>
+                                                    <span class="listText">AZN</span>
+                                                </div>
+                                                <button class="addBtn"> + </button></li>
+                                            <li onclick="addBtn1('eur')">
+                                                <div class="flag_val">
+                                                    <div class="flag">
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/810px-Flag_of_Europe.svg.png" alt="">
+                                                    </div>
+                                                    <span class="listText">EUR</span>
+                                                </div>
+                                                <button class="addBtn" > + </button></li>
+                                                <li onclick="addBtn1('usd')">
+                                                <div class="flag_val">
+                                                    <div class="flag">
+                                                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/2560px-Flag_of_the_United_States.svg.png" alt="">
+                                                    </div>
+                                                    <span class="listText">USD</span>
+                                                </div>
+                                                <button class="addBtn" > + </button></li>
+                                            <li  onclick="addBtn1('rub')">
+                                                <div class="flag_val">
+                                                    <div class="flag">
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Russia.png" alt="">
+                                                    </div>
+                                                    <span class="listText">RUB</span>
+                                                </div>
+                                                 <button class="addBtn"> + </button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="card_container">
+                       
+                    </div>
+               </div>
+        </div>
+   </section>
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>

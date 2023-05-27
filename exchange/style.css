@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button,
+input{
+    outline: none;
+    cursor: pointer;
+}
+ul li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.container{
+    max-width: 1070px;
+    margin: 0 auto;
+}
+
+
+.card_container {
+    display: flex;
+    gap: 20px ;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: #f1f2f8;
+    border-radius: 10px;
+    max-width: 340px;
+    margin-bottom: 20px;
+    padding: 20px;
+
+}
+
+.card input{
+    border-radius: 5px;
+    width: 100%;
+    height: 60px;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 48px;
+    border: 1px solid #ccc;
+    color: #404041;
+    font-weight: 300;
+    margin-top: 7px;
+}
+input::placeholder{
+    opacity: 0.5;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title h2{
+    font-size: 40px;
+    margin: 50px 0;
+}
+
+.card_top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.deleteBtn{
+    border: none;
+    color: white;
+    border-radius: 50%;
+    background: rgba(255, 0, 0, 0.456);
+    padding: 2px 9px;
+    font-size: 20px;
+}
+
+.deleteBtn:hover{
+    background-color: red;
+}
+
+
+.addBtn{
+    border: none;
+    cursor: pointer;
+    color: black;
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+    background-color: #10aba38a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: 0.3s;
+    transform: rotate(0deg);
+}
+
+.addBtn:hover{
+    background-color: #10aba3dd;
+
+}
+
+.valyuta_list{
+    width: 350px;
+    height: 65px;
+    background-color: #10aba2;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.valyuta_axtar{
+    display: flex;
+    height: 100%;
+    gap: 10px;
+}
+
+.search_valyuta{
+    width: 85%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.valyuta_axtar input{
+    width: 76%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+.search_valyuta i{
+    padding: 5px;
+    color: black;
+    opacity: 0.5;
+}
+
+.valyuta_axtar button{
+    width: 15%;
+}
+
+.valyuta_axtar button{
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+.valyuta_select_list{
+    background-color: white;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    margin-top: 14px;
+    z-index: 1;
+    border: 1px solid gray;
+}
+
+.overfloww{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease-in;
+    position: relative;
+    z-index: 1;
+
+}
+
+.valyuta_select_list ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    height: 45px;
+}
+
+.valyuta_select_list ul li:hover{
+    background-color: rgba(255, 0, 0, 0.196);
+}
+
+
+
+.flag img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.flag{
+    width: 50px;
+    height: 30px;
+}
+
+.flag_val{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+@media (max-width:900px) {
+    .container{
+        max-width: 742px;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width:742px) {
+    .container{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .title{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .card_container{
+        justify-content: center;
+    }
+}
